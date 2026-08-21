@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fomrulario IMC</title>
+    <title>Formulário IMC</title>
 </head>
 <body>
     <form action="" id="formulario">
-        <input type="number" id="Peso" step="0.01">
-        <input type="number" id="Altura" step="0.01">
-        <button type="submit">Calcular IMC</button>
+        <fieldset>
+            <legend>Calculadora de IMC</legend>
+
+            <div>
+                <label for="Peso">Peso (kg):</label>
+                <input type="number" id="Peso" step="0.01" placeholder="Ex: 70">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Altura">Altura (m):</label>
+                <input type="number" id="Altura" step="0.01" placeholder="Ex: 1.75">
+            </div>
+
+            <br>
+
+            <button type="submit">Calcular IMC</button>
+        </fieldset>
     </form>
-    
+
     <div id="resultado"></div>
-    
+
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
